@@ -1,8 +1,24 @@
 import React from "react";
+import HomePage from "./Pages/HomePage";
+import CategoryPage from "./Pages/CategoriesPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TeachOnByway from "./Pages/TeachOnByway";
+import LoginPage from "./Pages/LoginPage";
+import SignupStudentPage from "./Pages/SignupStudentPage";
+import SignupTeacherPage from "./Pages/SignupTeacherPage";
 function App() {
   return (
     <div>
-      <h1 className="text-3xl font-bold text-red-700">Hello world!</h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Category-Page" element={<CategoryPage />} />
+          <Route path="/TeachOnByway-Page" element={<TeachOnByway />} />
+          <Route path="/Login-Page" element={<LoginPage />} />
+          <Route path="/SignupStudent-Page" element={<SignupStudentPage />} />
+          <Route path="/SignupTeacher-Page" element={<SignupTeacherPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
