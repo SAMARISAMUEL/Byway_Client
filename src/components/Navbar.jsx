@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "/logo.svg";
 import { Link } from "react-router";
 import { Search } from "lucide-react";
-import Button from "./ReUsable/Button";
+import Button from "./ReUseable/Button";
 
 const Navbar = () => {
   return (
