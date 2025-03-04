@@ -5,7 +5,7 @@ import HeroImage from "/public/Group 469349.png";
 
 const HomeHero = () => {
   return (
-    <div className="flex py-12 px-28 gap-10">
+    <div className="flex py-28 px-28 gap-10">
       <div className="mt-36">
         <h1 className="text-5xl font-bold mb-4 w-[80%]">
           Unlock Your Potential with Byway

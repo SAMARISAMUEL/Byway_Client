@@ -6,7 +6,7 @@ import Button from "./ReUseable/Button";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-around px-8 py-5 border border-b-1 h-16 ">
+    <nav className="flex justify-around  py-5  h-16 ">
       <div className="flex">
         <Link to="/">
           <img src={Logo} alt="Byway Logo " className="w-6" />
@@ -33,7 +33,7 @@ const Navbar = () => {
               btnStyle="border border-black p-1 rounded "
             />
           </Link>
-          <Link>
+          <Link to="/SignupStudent-Page">
             <Button
               btnText="Sign Up"
               btnStyle="border border-black p-1 rounded bg-[#334155] text-white"
